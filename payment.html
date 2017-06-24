@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" href="style.css">
+<body background="images/body.jpg">
+<div id="header">
+
+
+<script>
+function validateForm()
+{
+if (document.forms["myForm"]["firstname"].value==null || document.forms["myForm"]["firstname"].value=="")
+{
+alert("Your first name must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["lastname"].value==null || document.forms["myForm"]["lastname"].value=="")
+{
+alert ("Your last name must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["cardtype"].value==null || document.forms["myForm"]["cardtype"].value=="")
+{
+alert ("Email must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["cardnum"].value==null || document.forms["myForm"]["cardnum"].value=="")
+{
+alert("Please enter your credit card number");
+return false;
+}
+
+if (document.forms["myForm"]["scode"].value==null || document.forms["myForm"]["scode"].value=="")
+{
+alert("Enter you card security code. Can be found on the back of the card");
+return false;
+}
+
+if (document.forms["myForm"]["Emonth"].value==null || document.forms["myForm"]["Emonth"].value=="")
+{
+alert("Enter your Expiration month of your card");
+return false;
+}
+
+if (document.forms["myForm"]["Eyear"].value==null || document.forms["myForm"]["Eyear"].value=="")
+{
+alert("Enter your Expiration year of your card");
+return false;
+}
+
+
+if (document.forms["myForm"]["Baddress"].value==null || document.forms["myForm"]["Baddress"].value=="")
+{
+alert("Please provide us a valid Billing address");
+return false;
+}
+
+
+if (document.forms["myForm"]["city"].value==null || document.forms["myForm"]["city"].value=="")
+{
+alert("Please enter your city");
+return false;
+}
+
+if (document.forms["myForm"]["state"].value==null || document.forms["myForm"]["state"].value=="")
+{
+alert("Please enter your state");
+return false;
+}
+
+
+if (document.forms["myForm"]["Zcode"].value==null || document.forms["myForm"]["Zcode"].value=="")
+{
+alert("Please enter valid zip code");
+return false;
+}
+
+
+if (document.forms["myForm"]["Cellnum"].value==null || document.forms["myForm"]["Cellnum"].value=="")
+{
+alert("Please provide us your Cell number");
+return false;
+}
+
+
+
+return true;
+}
+</script>
+</head>
+<center><img src="images/header1.png" align="center" width="1200" height="250"></center>
+<table>
+
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH body background="images/button.png" WIDTH="350px" height="50px" align="center"><B><a href="index.html"><font size="5">HOME</font></a><B></TH>	
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><B><a href="personal.html"><font size="5">GET STARTED</font></a><B></TH>
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><a href="facilities.html"><font size="5">FACILITIES</font></a></TH>
+	<TH body background="images/button.png"  WIDTH="350px"align="center"><a href="about.html"><font size="5">ABOUT US</font></a></TH>
+<tr><td bgcolor="#f85200" width="350px"></td><td bgcolor="#00FF1A" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td>
+</TABLE>
+</table>
+</div>
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH  bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5" COLOR="#a5a8a5">PERSONAL &nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a><B></TH>	
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5" COLOR="#a5a8a5" >WORKOUT PLAN &nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a><B></TH>
+	<TH bgcolor="#00FF1A" WIDTH="200x"  height="30px"align="center"><font size="5"  >PAYMENT INFO &nbsp;&nbsp;<img src="images/loading1.gif" width="20" height="20"</font></a></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><font size="5" COLOR="#a5a8a5" >SUBMIT</font></a></TH>
+</TABLE>
+
+
+<body>
+<table id="body1" width="1200" align="center"> 
+<td>
+
+<form name="myForm" method="post" action="submit.html" onsubmit="return validateForm()">
+<table align="center" border="3" bgcolor="grey" height="100" id="formtable">
+<tr>
+<td  body background="images/bas1.png"height="50" align="center"><font color="#211f1f" size="4"> <b> FIRST NAME</B></font></td>
+<td body background="images/bas1.png"><input type="text" name="firstname" length="25"> </td>
+
+<td body background="images/bas1.png" align="center"><font color="#211f1f" size="4"> <b>LAST NAME</B></FONT></td>
+<td body background="images/bas1.png"> <input type="text" name="lastname" length="25" > </td>
+
+</tr>
+
+
+<tr>
+<td body background="images/bas1.png"height="50" align="center"><font color="#211f1f" size="4"> <b>CARD TYPE</B></FONT></td>
+<td body background="images/bas1.png"><select name="cardtype">
+<option><font color="#211f1f" size="4"> <b>MASTER CARD</B></FONT></option>
+<option><font color="#211f1f" size="4"> <b>VISA</B></FONT> </option>
+<option><font color="#211f1f" size="4"> <b>DISCOVER</B></FONT></option>
+<option><font color="#211f1f" size="4"> <b>DEBIT CARD</FONT></option>
+<option><font color="#211f1f" size="4"> <b>AMERICAN EXPRESS</FONT></option>
+
+ </td>
+<td body background="images/bas1.png" align="center"> <font color="#211f1f" size="4"> <b>WE ACCEPT: </B></FONT></td>
+<td><center><img src="images/creditlogo.gif" height="47" width="300"></center></td>
+</tr>
+
+<tr>
+<td body background="images/bas1.png" height="50" align="center"><font color="#211f1f" size="4"> <b>CARD NUMBER</B></FONT> </td>
+<td body background="images/bas1.png"> <input type="text" name="cardnum" maxlength="16" > </td>
+<td  body background="images/bas1.png"align="center"> <font color="#211f1f" size="4"> <b>SECURITY CODE</B></FONT> </td>
+<td body background="images/bas1.png"> <input type="password" name="scode" maxlength="5" > </td>
+</tr>
+
+
+
+
+<tR>
+<td body background="images/bas1.png" height="50" align="center"><font color="#211f1f" size="4"> <b>EXPIRATION DATE:  MONTH </B></FONT></td>
+<td body background="images/bas1.png"><select name="Emonth">
+<option>January</option>
+<option>February</option>
+<option>March</option>
+<option>April</option>
+<option>May</option>
+<option>June</option>
+<option>July</option>
+<option>August</option>
+<option>September</option>
+<option>October</option>
+<option>November</option>
+<option>December</option>
+</select>
+ </td>
+<td  body background="images/bas1.png"align="center"><font color="#211f1f" size="4"> <b> YEAR:</B></FONT> </td>
+<td body background="images/bas1.png"> <select name="Eyear">
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+</select> </td>
+</tr>
+
+
+
+<tR>
+<td  body background="images/bas1.png" height="50" align="center"><font color="#211f1f" size="4"> <b>BILLING  <br> ADDRESS</B></FONT></td>
+<td body background="images/bas1.png"> <input type="text" name="Baddress" maxlength="8" > </td>
+<td body background="images/bas1.png" align="center"><font color="#211f1f" size="4"> <b>CITY</B></FONT></td>
+<td body background="images/bas1.png"> 
+<input type="text" name="city" maxlength="16" >
+ </td>
+</tr>
+
+<tr>
+<td  body background="images/bas1.png" height="50" align="center"><font color="#211f1f" size="4"> <b>STATE:</B></FONT></td>
+<td body background="images/bas1.png"> <select name="state">
+<option>New York </option>
+<option>Virginia</option>
+<option>California</option>
+<option>New jersey</option>
+<option>Ohio</option>
+</select> </td>
+<td body background="images/bas1.png" align="center"> <font color="#211f1f" size="4"> <b>ZIP CODE: </B></FONT></td>
+<td body background="images/bas1.png"> <input type="text" name="Zcode" length="5" > </td>
+</tr>
+
+
+
+<tr>
+<td  body background="images/bas1.png"height="50" align="center"><font color="#211f1f" size="4"> <b>CELL PHONE:</B></FONT></td>
+<td body background="images/bas1.png"> <input type="text" name="Cellnum" maxlength="10" > </td>
+<td  body background="images/bas1.png"height="50" align="center"><font color="#211f1f" size="4"> <b>HOME PHONE:</B></FONT></td>
+<td body background="images/bas1.png"> <input type="text" maxlength="10" > </td>
+</tr>
+
+
+<tr>
+<td <height="50"> <input type="reset" name="reset"> </td>
+<td  <height="50"> <input type="submit" name="next" value="NEXT"> 
+</td>
+</tr>
+</table>
+</form>
+
+
+
+
+<center><img src="images/sECUREP.JPG" width="905" height="300"></center>
+</td>
+
+
+</table>
+
+</body>
+</head>
+</html>
+ 

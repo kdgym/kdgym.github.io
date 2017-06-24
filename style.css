@@ -1,0 +1,101 @@
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: blue;
+	margin: 0;
+	padding: 0;
+	color: #000;
+    
+}
+
+
+
+a:link    {color:#000000; background-color:transparent; text-decoration:none}
+a:visited {color:#000000; background-color:transparent; text-decoration:none}
+a:hover   {color:#f85200; background-color:transparent; text-decoration:none}
+a:active  {color:#f85200; background-color:transparent; text-decoration:bold}
+th:active  {color:#f85200; background-color:white; text-decoration:none}
+
+function cycleImages(){
+      var $active = $('#background_cycler .active');
+      var $next = ($('#background_cycler .active').next().length > 0) ? $('#background_cycler .active').next() : $('#background_cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+	  $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+    $(window).load(function(){
+		$('#background_cycler').fadeIn(1500);//fade the background back in once all the images are loaded
+		  // run every 7s
+		  setInterval('cycleImages()', 7000);
+    })
+#GOLDMEMBER 
+{
+font-size: 11px;
+}
+	
+	
+	
+	
+h1{
+	color: #a5c3cd;
+}
+#TV
+{
+font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: 
+	margin: 0;
+	padding: 0;
+	color: #800000;
+	font-size: 11px;
+    
+}
+body{
+background-image: url("images/back4.jpg");
+	background-color:blue
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+		}
+
+
+ }
+#topic{
+color:Red
+}
+
+#container
+{
+color: #a5c3cd;
+width=1200;
+}
+
+
+
+
+
+
+#body1{
+background-image: url("images/steelfoot.jpg");\
+
+}
+
+
+#header{
+	background-color:grey
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-image: url("images/steelback.jpg");
+}
+#head{
+background-color:#ffffff;
+background-image: url("images/hh2.png");
+}
+#blockquote 
+{font-size: 20px;
+}
+
+#maintext{
+background-color="#800000";
+	}
+</style>

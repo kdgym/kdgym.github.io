@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+<LINK REL=STYLESHEET TYPE="text/css" href="style.css">
+<audio src="music.mp3" autoplay loop="true"></audio>
+
+<div id="header">
+
+<center><img src="images/header1.png" align="center" width="1200" height="250"></center>
+<table>
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" width="1200" CELLSPACING="3" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH body background="images/button.png" WIDTH="350px" height="50px" align="center"><B><a href="index.html"><font size="5">HOME</font></a><B></TH>	
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><B><a href="personal.html"><b><font size="5">GET STARTED</font></a></B></TH>
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><a href="facilities.html"><font size="5">FACILITIES</font></a></TH>
+	<TH body background="images/button.png"  WIDTH="350px"align="center"><a href="about.html"><font size="5">ABOUT US</font></a></TH>
+<tr><td bgcolor="#00FF1A" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td>
+</TABLE>
+</table>
+</div>
+<body>
+<script type="text/javascript"> 
+
+var i = 0; 
+// this is the array for the images 
+// these images are from different sites 
+var image = new Array();    
+
+image[0] = "images/568.jpg"; 
+
+image[1] = "images/slidespic.jpg"; 
+
+image[2] = "images/1-personal-trainer.png";   
+
+image[3] ="images/slide2.jpg";
+ 
+// this is the array for the captions 
+var k = image.length-1;    
+
+var caption = new Array(); 
+caption[0] = "."; 
+
+caption[1] = "."; 
+
+caption[2] = ".";   
+
+
+caption[3] = ".";
+
+
+// this is the swap funtion which does the process of changing the image 
+function swapImage(){ 
+
+var el = document.getElementById("mydiv"); 
+
+el.innerHTML=caption[i]; 
+
+var img= document.getElementById("slide"); 
+
+img.src= image[i];  
+
+if(i < k ) { i++;}  
+
+else  { i = 0; } 
+
+setTimeout("swapImage()",3000);  
+
+} 
+
+function addLoadEvent(func) { 
+
+var oldonload = window.onload; 
+
+if (typeof window.onload != 'function') { 
+window.onload = func; 
+} else  { 
+window.onload = function() { 
+if (oldonload) { 
+oldonload(); 
+
+} 
+
+func(); 
+
+} 
+
+} 
+
+}  
+
+addLoadEvent(function() 
+{ 
+
+swapImage(); 
+
+});  
+
+</script> 
+</head>
+<body>
+<body background="back3.jpg">
+
+<table style="border:0px solid #black;background-color:WHITE;" align="center"> 
+
+<tr> 
+
+<td> 
+
+<img name="slide" id="slide" alt ="my images" height="350" width="1200" src="image_1.gif"/> 
+
+</td> 
+
+</tr> 
+
+<tr> 
+
+<td align="center"style="font:small-caps bold  georgia; color:WHITE;"> 
+
+<div id ="mydiv"></div> 
+
+</tr> 
+
+</td> 
+
+</table> 
+
+<div id="contaner" border="1">
+<center><img src="images/main_img1.jpg" WIDTH="1200" HEIGHT="400"></center>
+<a id="DIS"></a>
+<center><img src="images/GYM2.jpg" WIDTH="1200" HEIGHT="600"></center>
+<a id="TEAM"></a>
+<center><img src="images/girl1.jpg" WIDTH="1200" HEIGHT="600"></center>
+<center><img src="images/PPPP.jpg" WIDTH="1200" HEIGHT="500"></center>
+</div>
+<div id="header" width="700" height="300" align="center">
+
+
+<table height="200" width="1200" bgcolor="grey"  body background="images/footer.png" >
+<TR  >
+<nav>.
+<TH BGCOLOR="#525050"  WIDTH="150px" align="center"><a href="#DIS">DISCOUNT</a></TH>
+	<TH BGCOLOR="#525050"  WIDTH="150px" align="center"><a href="#TEAM"><font>TEAM</a></font></a></TH>
+		</nav>
+	<TH BGCOLOR="#525050"  WIDTH="150px" align="center"><a href="#TOP">TOP</a></TH>
+<TR>
+
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</head>
+</html>
+ 

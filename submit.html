@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" href="style.css">
+<body background="images/body.jpg">
+<div id="header">
+<script>
+function validateForm()
+{
+if (document.forms["myForm"]["final"].value==null || document.forms["myForm"]["final"].value=="")
+{
+alert("Are agree to the trems and Conditions? Please select Yes or No");
+return false;
+}
+
+
+
+return true;
+}
+</script>
+<center><img src="images/header1.png" align="center" width="1200" height="250"></center>
+<table>
+
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH body background="images/button.png" WIDTH="350px" height="50px" align="center"><B><a href="index.html"><font size="5">HOME</font></a><B></TH>	
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><B><a href="getstarted.html"><font size="5">GET STARTED</font></a><B></TH>
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><a href="facilities.html"><font size="5">FACILITIES</font></a></TH>
+	<TH body background="images/button.png"  WIDTH="350px"align="center"><a href="about.html"><font size="5">ABOUT US</font></a></TH>
+<tr><td bgcolor="#f85200" width="350px"></td><td bgcolor="#00FF1A" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td>
+</TABLE>
+</table>
+</div>
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH  bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5"COLOR="#a5a8a5">PERSONAL INFO.&nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a><B></TH>	
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5" COLOR="#a5a8a5">WORKOUT PLAN &nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a><B></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200x"  height="30px"align="center"><font size="5" COLOR="#a5a8a5" >PAYMENT &nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a></TH>
+	<TH bgcolor="#00FF1A" WIDTH="200px" height="30px" align="center"><font size="5" >SUBMIT &nbsp;&nbsp;<img src="images/loading1.gif" width="20" height="20"</font></a></TH>
+</TABLE>
+
+
+<body>
+<table id="body1"width="1200" align="center"> 
+<td>
+
+<table id="body1" width="1200" align="center"> 
+<td>
+
+<form name="myForm" method="post" action="final_submit.html" onsubmit="return validateForm()">
+<table align="center" border="3" bgcolor="grey" height="100" id="formtable">
+<tr>
+<td  body background="images/bas1.png"height="50" align="center"><font size="5" COLOR="#00000">Agree to the <B>Terms and Conditions</B></font></td>
+<td body background="images/bas1.png"><font  size="4"><b>Yes</B></FONT><input type=radio name=SEMINARS value=Yes>
+ <font  size="4"><b>No</B></FONT><input type=radio name=SEMINARS value=No> </td>
+
+<td body background="images/bas1.png" align="center"><font size="5" COLOR="#00000">PRESS SUBMIT TO JOIN</B></FONT></td>
+<td body background="images/bas1.png"> <input type="submit" name="final" value="SUBMIT">  </td>
+
+</tr>
+
+
+<tr>
+<td body background="images/bas1.png"height="50" align="center"></td>
+<td body background="images/bas1.png">
+
+ </td>
+<td body background="images/bas1.png" align="center">  </td>
+<td body background="images/bas1.png"></td>
+</tr>
+
+
+</table>
+</form>
+
+
+
+
+
+</td>
+</table>
+
+
+
+</body>
+</head>
+</html>
+ 

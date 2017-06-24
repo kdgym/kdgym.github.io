@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" href="style.css">
+<body background="images/body.jpg">
+<div id="header">
+
+
+<script>
+function validateForm()
+{
+if (document.forms["myForm"]["membership"].value==null || document.forms["myForm"]["membership"].value=="")
+{
+alert("Please select the membership you want");
+return false;
+}
+
+if (document.forms["myForm"]["trainer"].value==null || document.forms["myForm"]["trainer"].value=="")
+{
+alert ("Tell us whether you want a personal trainer or not");
+return false;
+}
+
+if (document.forms["myForm"]["pool"].value==null || document.forms["myForm"]["pool"].value=="")
+{
+alert ("Tell us whether you want a Swimming pool accsess or not");
+return false;
+}
+
+if (document.forms["myForm"]["cardnum"].value==null || document.forms["myForm"]["cardnum"].value=="")
+{
+alert("Please enter your credit card number");
+return false;
+}
+
+if (document.forms["myForm"]["scode"].value==null || document.forms["myForm"]["scode"].value=="")
+{
+alert("Enter you card security code. Can be found on the back of the card");
+return false;
+}
+
+if (document.forms["myForm"]["Emonth"].value==null || document.forms["myForm"]["Emonth"].value=="")
+{
+alert("Enter your Expiration month of your card");
+return false;
+}
+
+if (document.forms["myForm"]["Eyear"].value==null || document.forms["myForm"]["Eyear"].value=="")
+{
+alert("Enter your Expiration year of your card");
+return false;
+}
+
+
+if (document.forms["myForm"]["Baddress"].value==null || document.forms["myForm"]["Baddress"].value=="")
+{
+alert("Please provide us a valid Billing address");
+return false;
+}
+
+
+if (document.forms["myForm"]["city"].value==null || document.forms["myForm"]["city"].value=="")
+{
+alert("Please enter your city");
+return false;
+}
+
+if (document.forms["myForm"]["state"].value==null || document.forms["myForm"]["state"].value=="")
+{
+alert("Please enter your state");
+return false;
+}
+
+
+if (document.forms["myForm"]["Zcode"].value==null || document.forms["myForm"]["Zcode"].value=="")
+{
+alert("Please enter valid zip code");
+return false;
+}
+
+
+if (document.forms["myForm"]["Cellnum"].value==null || document.forms["myForm"]["Cellnum"].value=="")
+{
+alert("Please provide us your Cell number");
+return false;
+}
+
+
+
+return true;
+}
+</script>
+</head>
+<center><img src="images/header1.png" align="center" width="1200" height="250"></center>
+<table>
+
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH body background="images/button.png" WIDTH="350px" height="50px" align="center"><B><a href="index.html"><font size="5">HOME</font></a><B></TH>	
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><B><a href="personal.html"><font size="5">GET STARTED</font></a><B></TH>
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><a href="facilities.html"><font size="5">FACILITIES</font></a></TH>
+	<TH body background="images/button.png"  WIDTH="350px"align="center"><a href="about.html"><font size="5">ABOUT US</font></a></TH>
+<tr><td bgcolor="#f85200" width="350px"></td><td bgcolor="#00FF1A" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td>
+</TABLE>
+</table>
+</div>
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH  bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5" COLOR="#a5a8a5">PERSONAL INFO. &nbsp;&nbsp;<img src="images/checkmark.PNG" width="25" height="25"></font></a><B></TH>	
+	<TH bgcolor="#00FF1A" WIDTH="200px" height="30px" align="center"><B><font size="5" >WORKOUT PLAN.&nbsp;&nbsp;<img src="images/loading1.gif" width="20" height="20"></font></a><B></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200x"  height="30px"align="center"><font size="5" COLOR="#a5a8a5" >PAYMENT &nbsp;&nbsp;<img src="images/ARROW.PNG" width="25" height="25"></font></a></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><font size="5" COLOR="#a5a8a5" >SUBMIT&nbsp;&nbsp;<img src="images/ARROW.PNG" width="25" height="25"></font></a></TH>
+</TABLE>
+
+
+<body>
+<table id="body1" width="1200" align="center"> 
+<td>
+
+<form name="myForm" method="post" action="payment.html" onsubmit="return validateForm()">
+<table align="center"  bgcolor="grey" height="100" id="formtable">
+<tr>
+<td  bgcolor="#afc4ca"height="50" align="center"><font color="#f85200"><font size="5"> <B>CHOOSE THE MEMBERSHIP</B> </font></td>
+<td bgcolor="#9ac2cd"align="center"><img src="images/gold.png" width="100" height="100"> <br><input type=radio name=membership value=female><FONT SIZE="4">GOLD </FONT><br> <BR>$80 per month<br>Benefits Include:<BR>
+<blockquote>
+<ul>
+  <li><FONT SIZE="4"color="#f85200"><B>UNLIMITED</FONT> ACCESS TO GYM </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>FREE</FONT> COIN MASSAGE</B> </li>
+  <li><FONT SIZE="4"color="#f85200"><B>DISCOUNTS</FONT> ON DRINKS AND SUPPLEMENTS </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>FREE </FONT>KD FITNESS T-SHIRT</B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>ONE GUEST </FONT>ALLOWED ANY TIME</B></li>
+  
+</ul> 
+</blockquote>
+</td>
+
+<td bgcolor="#bbd9e1"align="center"> <img src="images/silver.png" width="80" height="80"> <br><input type=radio name=membership value=female><FONT SIZE="4">SILVER</FONT><BR> <br> $60 per month<br>Benefits Include:<br><blockquote>
+<ul>
+  <li><FONT SIZE="4"color="#f85200"><B>UNLIMITED</FONT> ACCESS TO THE GYM </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>FREE</FONT> MASSAGE COINS</B> </li>
+  <li><FONT SIZE="4"color="#f85200"><B>No DISCOUNTS</FONT> ON DRINKS AND SUPPLEMENTS </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>No</FONT> KD FITNESS T-SHIRT</B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>No GUEST</FONT> ALLOWED ANY TIME</B></li>
+  
+</ul> 
+</blockquote></td>
+<td bgcolor="#e2ebee"align="center"><img src="images/plantimum.png" width="60" height="60"> <br><input type=radio name=membership value=female><FONT SIZE="4">PLANTIMUM </FONT><br><br>$45 per month<br>  Benefits Include: <br><blockquote>
+<ul>
+  <li><FONT SIZE="4"color="#f85200"><B>UNLIMITED</FONT>ACCESS TO THE GYM </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>NO FREE </FONT> MASSAGE COINS</B> </li>
+  <li><FONT SIZE="4"color="#f85200"><B>NO DISCOUNTS</FONT> ON DRINKS AND SUPPLEMENTS </B></li>
+  <li><FONT SIZE="4"color="#f85200"><B>NO FREE</FONT> KD FITNESS T-SHIRT</B><li>
+  <li><FONT SIZE="4"color="#f85200"><B>NO GUEST</FONT> ALLOWED </B></li>
+  
+</ul> 
+</blockquote></td>
+
+</tr>
+
+
+<tr>
+<td bgcolor="#afc4ca" height="50" align="center"><font color="#f85200"><font size="4"><b>DO YOU WANT PERSONAL TRAINER?</b></font></td>
+<td bgcolor="#9ac2cd"><font  size="4"><b>Yes</B></FONT><input type=radio name=trainer value=Yes>
+ <font size="4"><b>No</B></FONT><input type=radio name=trainer value=No>
+
+ </td>
+<td  bgcolor="#bbd9e1" align="center"><font color="#f85200"><font size="4"><b>PERSONAL TRAINER FEE: </B></FONT></td>
+<td bgcolor="#e2ebee"><font color="#f85200" size="4"><b>$25</FONT> per month</B></center></td>
+</tr>
+
+<tr>
+<td bgcolor="#afc4ca" height="50" align="center"><font color="#f85200"><font size="4"><b>DO WANT SWIMMING POOL ACCESS?</B></FONT> </td>
+<td bgcolor="#9ac2cd"> <font  size="4"><b>Yes</B></FONT><input type=radio name=pool value=Yes>
+ <font  size="4"><b>No</B></FONT><input type=radio name=pool value=No>
+ </td>
+<td  bgcolor="#bbd9e1" align="center"> <font color="#f85200"><font size="4"><b>SWIMMING POOL PASS FEE:</B></FONT></td>
+<td bgcolor="#e2ebee"> <font color="#f85200" size="4"><b>$10 </FONT>Extra</B></td>
+</tr>
+
+
+
+
+<tR>
+<td bgcolor="#afc4ca" height="50" align="center"><font color="#f85200"><font size="4"><b>YOUR HOBBIES</B></FONT><br>  </td>
+<td bgcolor="#9ac2cd">
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>RUNNING</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>SWIMMING</B></FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>DANCE</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>CYCLING<B></FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>ICE SKATING</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>DRIVING </B></FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>BIKING</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>FISHING</FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>YOGA</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>HIKING</FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>BOARD SPORTS</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>HOOPING</FONT><br>
+ </td>
+<td bgcolor="#bbd9e1" align="center"><font color="#f85200" size="4"><b>HOW DO YOU HEAR ABOUT US? </B></FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>TV</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>ARTICLE</B></FONT><br>
+<input type="checkbox" name="vehicle" value="Bike"><font  size="3"><b>NEWS</B></FONT><input type="checkbox" name="vehicle" value="Bike"><font  size="3"><B>OTHER</B></FONT><br></td>
+<td bgcolor="#e2ebee"> 
+<font SIZE="4"><B>IF YOU OTHER THAN EXPLAIN HERE: </B></FONT><textarea rows="10" cols="50">
+</textarea>
+
+
+</td>
+</tr>
+
+
+
+<tR>
+<td bgcolor="#afc4ca" height="50" align="center"> <font color="#f85200"><font size="4"><b>CHOOSE YOUR ETHNICITY  <br> </B></FONT></td>
+<td bgcolor="#9ac2cd"> <select name="Eyear">
+<option>ASIAN</option>
+<option>SOUTH AFRICAN</option>
+<option>NORTH AMERICAN</option>
+<option>EUROPEAN</option>
+<option></option> 
+</SELECT></td>
+
+<td bgcolor="#bbd9e1" align="center"><font color="#f85200"><font size="4"><b>DO YOU LIKE TO JOIN SEMINARS FROM OUR CLUB?</B></FONT></td>
+<td bgcolor="#e2ebee"> 
+<font  size="4"><b>Yes</B></FONT><input type=radio name=SEMINARS value=Yes>
+ <font  size="4"><b>No</B></FONT><input type=radio name=SEMINARS value=No>
+ </td>
+</tr>
+
+<tr>
+<td bgcolor="#bbd9e1" align="center"><font color="#f85200"><font size="4"><b>SELECT YOUR AGE SCALE </B></FONT><br> Year </td>
+<td bgcolor="#e2ebee"> <select name="Eyear">
+<option>13-15</option>
+<option>16-18</option>
+<option>19-21</option>
+<option>22-24</option>
+<option>25-27</option>
+<option>28-30</option>
+<option>31-33</option>
+<option>34-36</option>
+<option>38-40</option>
+<option>42-44</option>
+<option>46-48</option>
+<option>50 or OLDER</option>
+</select> </td>
+<td bgcolor="#bbd9e1"align="center"><font color="#f85200"><font size="4"><b> WOULD YOU LIKE TO RECIEVE <BR>OFFERS USING YOUR E-MAIL?</B></FONT> </td>
+<td bgcolor="#e2ebee"><font  size="4"><b>Yes</B></FONT><input type=radio name=SEMINARS value=Yes>
+ <font  size="4"><b>No</B></FONT><input type=radio name=SEMINARS value=No> </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td height="50"> <input type="reset" name="reset"> </td>
+<td><input type="submit" name="next" value="NEXT"> </td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+</td>
+</table>
+
+</body>
+</head>
+</html>
+ 

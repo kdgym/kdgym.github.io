@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" href="style.css">
+<body background="images/body.jpg">
+<div id="header">
+
+
+<script>
+function validateForm()
+{
+if (document.forms["myForm"]["firstname"].value==null || document.forms["myForm"]["firstname"].value=="")
+{
+alert("Your first name must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["lastname"].value==null || document.forms["myForm"]["lastname"].value=="")
+{
+alert ("Your last name must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+{
+alert ("Email must be filled out");
+return false;
+}
+
+if (document.forms["myForm"]["verifyeEmail"].value==null || document.forms["myForm"]["verifyeEmail"].value=="")
+{
+alert("You must verify your Email address");
+return false;
+}
+
+if (document.forms["myForm"]["address"].value==null || document.forms["myForm"]["address"].value=="")
+{
+alert("You must Enter your Valid Home address");
+return false;
+}
+
+if (document.forms["myForm"]["city"].value==null || document.forms["myForm"]["city"].value=="")
+{
+alert("You must Enter your City");
+return false;
+}
+
+if (document.forms["myForm"]["zip"].value==null || document.forms["myForm"]["zip"].value=="")
+{
+alert("You must enter your zip code");
+return false;
+}
+
+
+if (document.forms["myForm"]["dob"].value==null || document.forms["myForm"]["dob"].value=="")
+{
+alert("Please enter your Date of birth in following format below (MM/DD/YYYY)");
+return false;
+}
+
+
+if (document.forms["myForm"]["gender"].value==null || document.forms["myForm"]["gender"].value=="")
+{
+alert("Please select your gender");
+return false;
+}
+
+if (document.forms["myForm"]["homenum"].value==null || document.forms["myForm"]["homenum"].value=="")
+{
+alert("Please enter your home phone numeber");
+return false;
+}
+
+
+if (document.forms["myForm"]["cellnum"].value==null || document.forms["myForm"]["cellnum"].value=="")
+{
+alert("Please enter your cell phone numeber");
+return false;
+}
+
+
+if (document.forms["myForm"]["Lnum"].value==null || document.forms["myForm"]["Lnum"].value=="")
+{
+alert("Please enter your valid state driving licence number");
+return false;
+}
+
+if (document.forms["myForm"]["WORKNUM"].value==null || document.forms["myForm"]["WORKNUM"].value=="")
+{
+alert("Please enter your work number");
+return false;
+}
+
+return true;
+}
+</script>
+</head>
+<center><img src="images/header1.png" align="center" width="1200" height="250"></center>
+<table>
+
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH body background="images/button.png" WIDTH="350px" height="50px" align="center"><B><a href="index.html"><font size="5">HOME</font></a><B></TH>	
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><B><a href="personal.html"><font size="5">GET STARTED</font></a><B></TH>
+	<TH body background="images/button.png"  WIDTH="350px" align="center"><a href="facilities.html"><font size="5">FACILITIES</font></a></TH>
+	<TH body background="images/button.png"  WIDTH="350px"align="center"><a href="about.html"><font size="5">ABOUT US</font></a></TH>
+<tr><td bgcolor="#f85200" width="350px"></td><td bgcolor="#00FF1A" width="350px"></td><td bgcolor="#f85200" width="350px"></td><td bgcolor="#f85200" width="350px"></td>
+</TABLE>
+</table>
+</div>
+<TABLE BORDERCOLORLIGHT="#990000" BORDERCOLORDARK="#990000" CELLPADDING="5" CELLSPACING="3" width="1200" BORDER="2" id="header" align="center" body background="images/steel.jpg">
+	<TH  bgcolor="#00FF1A" WIDTH="200px" height="30px" align="center"><B><font size="5">PERSONAL INFO &nbsp;&nbsp;<img src="images/loading1.gif" width="20" height="20"></font></a><B></TH>	
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><B><font size="5" COLOR="#a5a8a5">WORKOUT PLAN&nbsp;&nbsp;<img src="images/ARROW.PNG" width="25" height="25"></font></a><B></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200x"  height="30px"align="center"><font size="5" COLOR="#a5a8a5" >PAYMENT &nbsp;&nbsp;<img src="images/ARROW.PNG" width="25" height="25">  </font></a></TH>
+	<TH bgcolor="#a7fd96" WIDTH="200px" height="30px" align="center"><font size="5" COLOR="#a5a8a5" >SUBMIT&nbsp;&nbsp;<img src="images/ARROW.PNG" width="25" height="25"> </font></a></TH>
+</TABLE>
+
+
+<body>
+<table id="body1"width="1200" align="center"> 
+<td>
+
+<form name="myForm" method="post" action="workout.html" onsubmit="return validateForm()">
+<table align="center" border="0" bgcolor="grey" height="100" id="formtable">
+<tr>
+<td  body background="images/bas.png" height="50" align="center"><font color="#211f1f" size="4"> <b>FIRST NAME</b></font></td>
+<td body background="images/bas.png"><input type="text" name="firstname" maxlength="20"> </td>
+
+<td body background="images/bas.png"align="center"><font color="#211f1f" size="4"> <b>LAST NAME </b></font></td>
+<td body background="images/bas.png"> <input type="text" name="lastname" maxlength="20" > </td>
+
+</tr>
+
+
+<tr>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"><b> E-MAIL:</b></font></td>
+<td body background="images/bas.png"><input type="email" name="email" maxlength="25" > </td>
+<td body background="images/bas.png"align="center"><font color="#211f1f" size="4">  <font color="#211f1f" size="4"> <b>VERIFY E-MAIL: </b></font></td>
+<td body background="images/bas.png"><input type="email" name="verifyeEmail" maxlength="25" > </td>
+
+
+</tr>
+
+<tr>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"> <b>MAILING ADDRESS:</b></font> </td>
+<td body background="images/bas.png"> <input type="text" name="address" maxlength="25" > </td>
+<td body background="images/bas.png"align="center"> <font color="#211f1f" size="4"> <b>CITY:</b></font> </td>
+<td body background="images/bas.png"> <input type="text" name="city" maxlength="25" > </td>
+</tr>
+
+
+
+
+<tR>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"> <b>STATE: </b></font></td>
+<td body background="images/bas.png"><select name="state">
+<option> Alabama</option>
+<option> Alaska</option>
+<option> Arizona</option>
+<option>Arkansas</option>
+<option>California</option>
+<option> Colorado </option>
+<option> Connecticut</option>
+<option>Delaware</option>
+<option>New jersey</option>
+<option>Florida</option>
+<option>Georgia</option>
+<option>Hawaii</option>
+<option> Idaho</option>
+<option>Illinois</option>
+<option> Indiana</option>
+<option> Alabama</option>
+<option> Alaska</option>
+<option>  Kansas</option>
+<option>New York</option>
+<option> North Carolina</option>
+<option>New Jersey</option>
+<option> Oklahoma</option>
+<option> Oregon</option>
+<option>Pennsylvania</option>
+<option>Texas</option>
+<option>West Virginia</option>
+<option> Wisconsin</option>
+<option>  Wyoming</option>
+<option>Vermont</option>
+<option> Tennessee</option>
+</select>
+ </td>
+<td body background="images/bas.png"align="center"> <font color="#211f1f" size="4"> <b>POSTAL CODE:</b> </font></td>
+<td body background="images/bas.png"> <input type="text" name="zip" maxlength="5" > </td>
+</tr>
+
+
+
+<tR>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"> <b>DATE OF BIRTH: <br></b></font></td>
+<td body background="images/bas.png"> <input type="text" name="dob" maxlength="8" > </td>
+<td  body background="images/bas.png"align="center"><font color="#211f1f" size="4">  <b>GENDER: </b></font></td>
+<td body background="images/bas.png"> <input type=radio name=gender value=male><font color="#211f1f" size="3"> <b>MALE</b></font>
+<input type=radio name=gender value=female><font color="#211f1f" size="3"> <b>FEMALE</b></font><br>
+ </td>
+</tr>
+
+
+
+<tr>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"> <b>HOME PHONE:</b> </font></td>
+<td body background="images/bas.png"> <input type="text" name="homenum" maxlength="15" > </td>
+<td body background="images/bas.png"align="center"> <font color="#211f1f" size="4"><b> CELL PHONE:</b> </font></td>
+<td body background="images/bas.png"> <input type="text" name="cellnum" maxlength="15" > </td>
+</tr>
+
+
+
+<tr>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"><b> DRIVING LICENCE NUMNER</b> </font></td>
+<td body background="images/bas.png"> <input type="text" name="Lnum" maxlength="25" > </td>
+<td body background="images/bas.png"height="50" align="center"><font color="#211f1f" size="4"><b>WORK NUMBER</b> </font></td>
+<td body background="images/bas.png"> <input type="text" name="WORKNUM" maxlength="9" > </td>
+</tr>
+
+<center>
+<tr>
+
+<td> <input type="reset" name="reset"> </td>
+<td><input type="submit" name="next" value="NEXT"> </td>
+</tr>
+</center>
+</table>
+</form>
+
+
+
+
+<center><img src="images/sECUREP.JPG" width="765" height="250"></center>
+</td>
+</table>
+
+</body>
+</head>
+</html>
+ 
